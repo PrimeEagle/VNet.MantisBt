@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using VNet.Utility;
+
 // ReSharper disable MemberCanBePrivate.Global
 
 namespace VNet.MantisBt
