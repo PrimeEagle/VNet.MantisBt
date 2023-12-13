@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31727.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.MantisBt", "VNet.MantisBt\VNet.MantisBt.csproj", "{752A8ED1-E755-4757-85E2-08803A8949B0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.MantisBt.Test", "VNet.MantisBt.Test\VNet.MantisBt.Test.csproj", "{C7979D36-9010-4A35-91C6-B02B5EACC351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{1778A5F0-BA17-41B9-9B64-02AE4A19CA6A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".version", ".version", "{1AD54820-BA3F-4A2E-AFE1-9A2B0EDB6FE0}"
+	ProjectSection(SolutionItems) = preProject
+		.version\version.json = .version\version.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +26,6 @@ Global
 		{C7979D36-9010-4A35-91C6-B02B5EACC351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7979D36-9010-4A35-91C6-B02B5EACC351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7979D36-9010-4A35-91C6-B02B5EACC351}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1778A5F0-BA17-41B9-9B64-02AE4A19CA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1778A5F0-BA17-41B9-9B64-02AE4A19CA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1778A5F0-BA17-41B9-9B64-02AE4A19CA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1778A5F0-BA17-41B9-9B64-02AE4A19CA6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

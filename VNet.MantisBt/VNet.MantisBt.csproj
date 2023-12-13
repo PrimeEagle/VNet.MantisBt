@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
+    <PackageReference Include="VNet.Utility" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
