@@ -1,22 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(ServerBuild)' != ''">
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="VNet.Utility" Version="1.0.1" />
-  </ItemGroup>
+	<ItemGroup Condition="'$(ServerBuild)' != ''">
+		<PackageReference Include="VNet.Utility" Version="1.0.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="VNet.Utility">
-      <HintPath>..\..\Shared Libraries\VNet.Utility.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-	<Target Name="CopyToSharedLibraries" AfterTargets="AfterBuild">
-		<Copy SourceFiles="$(OutputPath)\VNet.MantisBt.dll" DestinationFolder="D:\My Code\Shared Libraries\" ContinueOnError="true" />
-	</Target>
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	  <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
+	<ItemGroup Condition="'$(ServerBuild)' == ''">
+		<ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
+		<Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
 	</Target>
 </Project>
