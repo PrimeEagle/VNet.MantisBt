@@ -6,6 +6,27 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<PackageId>VNet.MantisBt</PackageId>
+		<Authors>PrimeEagle</Authors>
+		<Product>VNet.MantisBt</Product>
+		<Description>A class library for interfacing with the MantisBT defect tracking system.</Description>
+		<PackageTags>dotnet;dotnet-core;dotnet-library;defect-tracking;mantis-bt</PackageTags>
+		<PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/PrimeEagle/VNet.MantisBt</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/PrimeEagle/VNet.MantisBt</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>VNet.MantisBt</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	
 	<PropertyGroup Condition="'$(ServerBuild)' != ''">
 	</PropertyGroup>
 
