@@ -27,7 +27,7 @@
   <PropertyGroup Condition="'$(ServerBuild)' != ''">
   </PropertyGroup>
   <ItemGroup Condition="'$(ServerBuild)' != ''">
-    <PackageReference Include="VNet.Utility" Version="1.0.1" />
+    <PackageReference Include="VNet.Utility" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup Condition="'$(ServerBuild)' == ''">
     <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
